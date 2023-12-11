@@ -1,0 +1,64 @@
+local m = {}
+
+local normal_keys = {
+	-- normal mode
+	{ lhs = 'L', rhs = '$'},
+	{ lhs = 'H', rhs = '_'},
+	{ lhs = 'J', rhs = '10jzz'},
+	{ lhs = 'K', rhs = '10kzz'},
+	{ lhs = 'j', rhs =  'jzz'},
+	{ lhs = 'k', rhs =  'kzz'},
+	{ lhs = 'U', rhs = ':redo<cr>'},
+	{ lhs = 'Q', rhs = 'maggvG=`a'},
+	-- normal leader
+	{ lhs = '<leader>w' , rhs = ':w<cr>'},
+	{ lhs = '<leader>q' , rhs = ':x<cr>'},
+	{ lhs = '<leader>Q' , rhs = ':q!<cr>'},
+	{ lhs = '<leader>os' , rhs = ':split /home/leenuus/.config/nvim/init.lua<cr>'},
+	{ lhs = '<leader>ok' , rhs = ':split /home/leenuus/.config/nvim/lua/keybindings.lua<cr>'},
+	{ lhs = '<leader>oo' , rhs = ':split /home/leenuus/.config/nvim/lua/options.lua<cr>'},
+	{ lhs = '<leader>ss' , rhs = ':source /home/leenuus/.config/nvim/init.lua<cr>'},
+}
+
+local operator_pending_keys = {
+	-- operator pending mode
+	{ lhs = 'L', rhs = '$'},
+	{ lhs = 'H', rhs = '_'},
+	{ lhs = 'p', rhs = 'i('},
+	{ lhs = 'P', rhs = 'a('},
+	{ lhs = 'q', rhs = 'i"'},
+	{ lhs = 'Q', rhs = 'a"'},
+	{ lhs = 'x', rhs = 'i\''},
+	{ lhs = 'X', rhs = 'a\''},
+}
+
+local visual_keys = {
+	-- visual mode
+	{ lhs =  'H', rhs = '_'},
+	{ lhs =  'L', rhs = '$'},
+	{ lhs =  'J', rhs = '10jzz'},
+	{ lhs =  'K', rhs = '10kzz'},
+}
+
+local insert_keys = {
+	-- insert mode
+	{ lhs =  '<C-h>', rhs = '<C-W>'},
+	{ lhs =  '<c-u>', rhs = '<esc>bveUea'},
+	{ lhs = '<esc>', rhs = '<esc>zz'},
+}
+
+
+function mapkeys_mode(mode, keys)
+	for _index, key in pairs(keys) do
+		vim.keymap.set(mode, key['lhs'], key['rhs'])
+	end
+end
+
+function m.setup()
+	mapkeys_mode('n', normal_keys)
+	mapkeys_mode('o', operator_pending_keys)
+	mapkeys_mode('v', visual_keys)
+	mapkeys_mode('i', insert_keys)
+end
+
+return m
