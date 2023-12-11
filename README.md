@@ -6,11 +6,12 @@
 
 ## Progress
 
-- [ ]LSP settings
-- [ ]status line
-- [ ]terminal
-- [ ]tmux
-- [ ]"tfTF" binds to hop function, maybe not usable in macro recording
+- [ ] LSP settings
+- [X] status line
+- [ ] terminal
+- [ ] tmux
+- [ ] "tfTF" binds to hop function, maybe not usable in macro recording
+- [ ] git integration
 
 
 ## References

@@ -10,6 +10,7 @@
 8. vim-repeat, for better macro
 9. hop, for better native `fFtT` and jump between lines 
 10. vim-sneak, better jump within current line
+11. lualine, a good status line
 
 ## Plugins Template
 
