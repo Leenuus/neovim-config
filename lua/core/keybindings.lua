@@ -56,7 +56,7 @@ keymap.register({
 	['<C-h>'] = { '<C-W>', "backspace kill word"},
 	[ '<c-u>' ] = { '<esc>bveUea', "capitalize previous word"},
 	[ '<esc>' ] = { '<esc>zz', "center cursor"},
-})
+}, { mode = 'i' })
 
 -- {
 --   mode = "n", -- NORMAL mode
