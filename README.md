@@ -7,6 +7,7 @@
 ## Progress
 
 - [X] status line
+- [ ] Lock plugins' edition
 - [ ] LSP settings
 - [ ] terminal
 - [ ] tmux
@@ -14,7 +15,9 @@
 - [ ] git integration
 - [ ] fuzzy search and jump between files(telescope)
 - [ ] file explorer(nvimtree)
-
+- [ ] project management
+- [ ] Debug Adapter
+- [ ] Indentation Guide
 
 ## References
 
