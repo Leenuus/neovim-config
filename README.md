@@ -6,12 +6,14 @@
 
 ## Progress
 
-- [ ] LSP settings
 - [X] status line
+- [ ] LSP settings
 - [ ] terminal
 - [ ] tmux
 - [ ] "tfTF" binds to hop function, maybe not usable in macro recording
 - [ ] git integration
+- [ ] fuzzy search and jump between files(telescope)
+- [ ] file explorer(nvimtree)
 
 
 ## References
