@@ -18,6 +18,7 @@
 - [ ] project management
 - [ ] Debug Adapter
 - [ ] Indentation Guide
+- [ ] Snippet Engine
 
 ## References
 
