@@ -43,7 +43,7 @@ keymap.register({
 	j = {  'jzz', "jump down stay middle"},
 	k = {  'kzz', "jump up stay middle"},
 	U = { ':redo<cr>', "redo"},
-	Q = { 'maggvG=`a', "align buffer"},
+	Q = { ':Format<cr>', "format with formatter"},
 }, n)
 
 keymap.register({

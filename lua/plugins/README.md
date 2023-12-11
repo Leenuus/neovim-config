@@ -11,6 +11,7 @@
 9. hop, for better native `fFtT` and jump between lines 
 10. vim-sneak, better jump within current line
 11. lualine, a good status line
+12. conform.nvim, a better `Q` to format my code
 
 ## Plugins Template
 
